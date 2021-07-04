@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="auto" content='homo'>
+	<meta charset="UTF-8">
+	<title>木毛旅行社 -登录</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">木毛旅行社</h1>
+			<nav style='overflow:hidden;'>
+				<h2 class="none">网站导航</h2>
+			<ul class="link">
+					<li ><a href="index.html">首页</a></li>
+					<li><a href="information.html" >旅行信息</a></li>
+					<li><a href="buy.html">订购</a></li>
+					<li><a href="scenery.html">风景欣赏</a></li>
+					<li class="active"><a href="#">登录</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <script>
+        function jump(){
+            window.location="login.html";
+        }
+        function jump_1(){
+            window.location="register.html";
+        }
+        function jump_index(){
+            window.location="index.html"
+        }
+    </script>
+		<div id="search">
+            <div id="login">
+                <div style="text-align: center;"><span id="login_header1">登录</span><b>·</b><span id="login_header" onclick="jump_1()">注册</span></div>
+                <div><input class="input" placeholder="手机号或邮箱" type="text" style="margin: 0px 40 0px; border-radius: 0px 0px 0px 0px;"></div>
+                <div><input class="input" placeholder="密码" type="text" style="margin: 0px auto 0px; border-radius: 0px 0px 4px 4px;"></div>
+                <div class=""><button class="button_1" style="margin-top: 20%;" onclick="jump_index()">登  录</button></div>
+            </div>
+        </div>
